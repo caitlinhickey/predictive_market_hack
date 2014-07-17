@@ -22,6 +22,7 @@ body {
   width: 100%;
   padding: 5px 15px;
 }
+
 /* Nav Messages */
 
 .messages-dropdown .dropdown-menu .message-preview .avatar,
@@ -106,12 +107,12 @@ table.tablesorter thead tr th:hover {
 	height: 100%;
 	border-radius: 0;
 	border: none;
-	background-color: #222222;
+	background-color: #005595;
 	overflow-y: auto;
   }
 
   /* Bootstrap Default Overrides - Customized Dropdowns for the Side Nav */
-
+  
   .side-nav>li.dropdown>ul.dropdown-menu {
 	position: relative;
 	min-width: 225px;
@@ -142,9 +143,14 @@ table.tablesorter thead tr th:hover {
 
   .navbar-inverse .navbar-nav>li>a:hover,
   .navbar-inverse .navbar-nav>li>a:focus {
-	background-color: #080808;
+	background-color: #003b68;
   }
-
+  .navbar-inverse .navbar-nav>li>a:active{
+  background-color:#00223b;
+  }
+  .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+  background-color:#00223b;
+  }
   /* Nav Messages */
 
   .messages-dropdown .dropdown-menu {
