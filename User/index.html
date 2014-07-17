@@ -21,9 +21,15 @@
   <body>
 
     <div id="wrapper">
+      <style>
+      .navbar-inverse{
+        background-color: #005595;
+      }
 
+      </style>
       <!-- Sidebar -->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -32,16 +38,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">ViSion</a>
+          <a class="navbar-brand" href="index.html">ViaStock</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
             <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Stock Price History</a></li>
-            <li><a href="tables.html"><i class="fa fa-table"></i> Transaction History</a></li>
-            <li><a href="forms.html"><i class="fa fa-edit"></i> Perform a Transaction</a></li>
+            <li><a href="stock_history.html"><i class="fa fa-bar-chart-o"></i> Stock Price History</a></li>
+            <li><a href="transaction_history.html"><i class="fa fa-th-list"></i> Transaction History</a></li>
+            <li><a href="perform.html"><i class="fa fa-shopping-cart"></i> Perform a Transaction</a></li>
             </li>
           </ul>
 
@@ -79,9 +85,7 @@
         <div class="row">
           <div class="col-lg-12">
             <h1>Dashboard <small>Statistics Overview</small></h1>
-            <ol class="breadcrumb">
-              <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
-            </ol>
+            
             <div class="alert alert-success alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
               Welcome to SB Admin by <a class="alert-link" href="http://startbootstrap.com">Start Bootstrap</a>! Feel free to use this template for your admin needs! We are using a few different plugins to handle the dynamic tables and charts, so make sure you check out the necessary documentation links provided.
