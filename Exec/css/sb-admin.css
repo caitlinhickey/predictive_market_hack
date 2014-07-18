@@ -172,4 +172,26 @@ table.tablesorter thead tr th:hover {
     padding-right: 15px !important;
   }
 
-}
+ div#page {
+  margin: 60px auto;
+  border: 1px solid #dedede;
+  width: 910px;
+ }
+ .TogWrap {
+  width: 400px;
+  padding: 22px;
+ }
+ 
+ #togTrigger {
+  padding: 7px 8px;
+  background: #ffffff;
+  color: #000000;
+ }
+
+.togContent  {
+  margin-top: 9px;
+  border: 1px solid #bebebe;
+  padding: 16px 10px 10px 10px;
+  background: #ededed;
+ }
+
