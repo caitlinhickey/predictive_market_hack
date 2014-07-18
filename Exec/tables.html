@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Transactions</title>
+    <title>Tables - SB Admin</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -14,7 +14,6 @@
     <!-- Add custom CSS here -->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <script src="js/main.js"></script>
   </head>
 
   <body>
@@ -31,7 +30,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Dashboard</a>
+          <a class="navbar-brand" href="index.html">SB Admin</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,12 +38,12 @@
           <ul class="nav navbar-nav side-nav">
             <li ><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
-            <li class="active"><a href="tables.html"><i class="fa fa-table"></i> Transactions</a></li>
+            <li class="active"><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
             <li class="dropdown alerts-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts </b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Default <span class="label label-default">Default</span></a></li>
                 <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
@@ -57,7 +56,7 @@
               </ul>
             </li>
             <li class="dropdown user-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Mark Dankberg <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
                 <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
@@ -73,30 +72,323 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <h1 style="padding-bottom:0px;">Transactions <small>View the market transactions</small></h1>
-            <p style="padding-bottom:20px;"> Hover over the seller or buyers' names to see their reason for their transaction. </p>
+            <h1>Tables <small>Sort Your Data</small></h1>
+            <ol class="breadcrumb">
+              <li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+              <li class="active"><i class="fa fa-table"></i> Tables</li>
+            </ol>
+            <div class="alert alert-info alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              We're using <a class="alert-link" href="http://tablesorter.com/docs/">Tablesorter 2.0</a> for the sort function on the tables. Read the documentation for more customization options or feel free to use something else!
+            </div>
           </div>
         </div><!-- /.row -->
 
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-6">
+            <h2>Bordered Table</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover tablesorter">
+                <thead>
+                  <tr>
+                    <th>Page <i class="fa fa-sort"></i></th>
+                    <th>Visits <i class="fa fa-sort"></i></th>
+                    <th>% New Visits <i class="fa fa-sort"></i></th>
+                    <th>Revenue <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr>
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr>
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr>
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>Bordered with Striped Rows</h2>
             <div class="table-responsive">
               <table class="table table-bordered table-hover table-striped tablesorter">
                 <thead>
                   <tr>
-                    <th>Seller <i class="fa fa-sort"></i></th>
-                    <th>Dept. <i class="fa fa-sort"></i></th>
-                    <th>Buyer <i class="fa fa-sort"></i></th>
-                    <th>Dept. <i class="fa fa-sort"></i></th>
-                    <th>Amount Traded <i class="fa fa-sort"></i></th>
-                    <th>Time <i class="fa fa-sort"></i></th>
+                    <th>Page <i class="fa fa-sort"></i></th>
+                    <th>Visits <i class="fa fa-sort"></i></th>
+                    <th>% New Visits <i class="fa fa-sort"></i></th>
+                    <th>Revenue <i class="fa fa-sort"></i></th>
                   </tr>
                 </thead>
-                <tbody id="trans">
-                  <!-- filled in by js -->
+                <tbody>
+                  <tr>
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr>
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr>
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr>
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Basic Table</h2>
+            <div class="table-responsive">
+              <table class="table table-hover tablesorter">
+                <thead>
+                  <tr>
+                    <th>Page <i class="fa fa-sort"></i></th>
+                    <th>Visits <i class="fa fa-sort"></i></th>
+                    <th>% New Visits <i class="fa fa-sort"></i></th>
+                    <th>Revenue <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr>
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr>
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr>
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>Striped Rows</h2>
+            <div class="table-responsive">
+              <table class="table table-hover table-striped tablesorter">
+                <thead>
+                  <tr>
+                    <th>Page <i class="fa fa-sort"></i></th>
+                    <th>Visits <i class="fa fa-sort"></i></th>
+                    <th>% New Visits <i class="fa fa-sort"></i></th>
+                    <th>Revenue <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr>
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr>
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr>
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div><!-- /.row -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Contextual Classes</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover table-striped tablesorter">
+                <thead>
+                  <tr>
+                    <th>Page <i class="fa fa-sort"></i></th>
+                    <th>Visits <i class="fa fa-sort"></i></th>
+                    <th>% New Visits <i class="fa fa-sort"></i></th>
+                    <th>Revenue <i class="fa fa-sort"></i></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active">
+                    <td>/index.html</td>
+                    <td>1265</td>
+                    <td>32.3%</td>
+                    <td>$321.33</td>
+                  </tr>
+                  <tr class="success">
+                    <td>/about.html</td>
+                    <td>261</td>
+                    <td>33.3%</td>
+                    <td>$234.12</td>
+                  </tr>
+                  <tr class="warning">
+                    <td>/sales.html</td>
+                    <td>665</td>
+                    <td>21.3%</td>
+                    <td>$16.34</td>
+                  </tr>
+                  <tr class="danger">
+                    <td>/blog.html</td>
+                    <td>9516</td>
+                    <td>89.3%</td>
+                    <td>$1644.43</td>
+                  </tr>
+                  <tr>
+                    <td>/404.html</td>
+                    <td>23</td>
+                    <td>34.3%</td>
+                    <td>$23.52</td>
+                  </tr>
+                  <tr>
+                    <td>/services.html</td>
+                    <td>421</td>
+                    <td>60.3%</td>
+                    <td>$724.32</td>
+                  </tr>
+                  <tr>
+                    <td>/blog/post.html</td>
+                    <td>1233</td>
+                    <td>93.2%</td>
+                    <td>$126.34</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h2>Bootstrap Docs</h2>
+            <p>For complete documentation, please visit <a target="_blank" href="http://getbootstrap.com/css/#tables">Bootstrap's Tables Documentation</a>.</p>
           </div>
         </div><!-- /.row -->
 
@@ -113,5 +405,4 @@
     <script src="js/tablesorter/tables.js"></script>
 
   </body>
-  <script src="https://spreadsheets.google.com/feeds/list/1xHwfl__5fWKKdzvPYOqdbCj5P36R8uDbTWs4FWsAyTE/od6/public/values?alt=json&amp;callback=showTransaction"></script>
 </html>
