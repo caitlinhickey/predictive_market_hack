@@ -151,6 +151,12 @@ table.tablesorter thead tr th:hover {
   .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
   background-color:#00223b;
   }
+  .navbar-inverse .navbar-nav > li > a{
+  color: #fff;
+  }
+  .navbar-inverse .navbar-brand{
+  color: #fff;
+  }
   /* Nav Messages */
 
   .messages-dropdown .dropdown-menu {
