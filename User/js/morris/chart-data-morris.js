@@ -52,8 +52,8 @@ Morris.Area({
 Morris.Donut({
   element: 'morris-chart-donut',
   data: [
-    {label: "Sales", value: 42.7},
-    {label: "Purchases", value: 57.3}
+    {label: "For Sale", value: 42.7},
+    {label: "Being Held", value: 57.3}
   ],
   formatter: function (y) { return y + "%" ;}
 });
