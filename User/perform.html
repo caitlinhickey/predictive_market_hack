@@ -152,8 +152,7 @@
                 <textarea class="form-control" rows="3" placeholder = "Please enter your reasoning for the transaction"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-default">Submit Button</button>
-              
+              <button >Buy</button>
 
             </form>
 
@@ -164,10 +163,10 @@
                 <h2><b>Sell</b></h2>
               </div>
             </div>
-            <form role="form">
+            <form role="form" id="formID" method="post" action="https://script.google.com/macros/s/AKfycbxEwhYYYeGNIhMsnvDyzPcOuhy2xDCUAszwZjkaSAUtZ7V5Xure/exec" target="hidden_iframe">
               <div class="form-group">
                 <label>Number of Stock to Sell</label>
-                <select class="form-control">
+                <select  class="form-control">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -177,14 +176,17 @@
               </div>
                <div class="form-group">
                 <label>Price to Sell For</label>
-                <input class="form-control" placeholder="Enter a Price">
+                <input id="Amnt" name="Amnt" class="form-control" placeholder="Enter a Price">
               </div>
               <div class="form-group">
                 <label>Reason</label>
-                <textarea class="form-control" rows="3" placeholder = "Please enter your reasoning for the transaction"></textarea>
+                <textarea id="Reason" name="Reason" class="form-control" rows="3" placeholder = "Please enter your reasoning for the transaction"></textarea>
+                <input class="hidden" id="Time" name="Time">
+                <input class="hidden" id="Name" name="Name" type="text" class="form-control" placeholder="Name">
               </div>
-              <button type="submit" class="btn btn-default">Submit Button</button>
+              <button id='send' name='send' form='formID' target="_blank" onclick="date_time()">Sell</button>
               </div> 
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
             </form>
 
             
