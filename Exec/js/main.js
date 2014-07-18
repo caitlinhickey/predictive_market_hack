@@ -39,3 +39,11 @@ function showBuys(json) {
         );
     }
 }
+
+function findPrice(json) {
+    var end = json.feed.entry.length;
+    entry = json.feed.entry[end - 1];
+    $('#currentPrice').append(
+            '<h2>'+ entry.gsx$amnt.$t +'</h2>'
+    );
+}
