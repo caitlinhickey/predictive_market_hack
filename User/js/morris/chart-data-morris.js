@@ -18,7 +18,7 @@ Morris.Area({
   ykeys: ['visits'],
   // Labels for the ykeys -- will be displayed when you hover over the
   // chart.
-  labels: ['Visits'],
+  labels: ['Sold At'],
   // Disables line smoothing
   smooth: false,
 });
@@ -76,7 +76,7 @@ Morris.Line({
   ykeys: ['visits'],
   // Labels for the ykeys -- will be displayed when you hover over the
   // chart.
-  labels: ['Visits'],
+  labels: ['Sold At'],
   // Disables line smoothing
   smooth: false,
 });

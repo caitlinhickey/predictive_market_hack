@@ -72,9 +72,11 @@ function date_time(){
                 s = "0"+s;
         }
         result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+        the_name = 'John Smith';
         document.getElementById("Time").innerHTML = result;
-        document.getElementById("Name").innerHTML = 'John Smith';
+        document.getElementById("Name").innerHTML = the_name;
         console.log('time is ' + result);
          $('#Time').val(result);
+         $('#Name').val(the_name);
         return true;
 }

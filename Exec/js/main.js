@@ -47,3 +47,17 @@ function findPrice(json) {
             '<h2>'+ entry.gsx$amnt.$t +'</h2>'
     );
 }
+
+function curSell(json) {
+    for (i = 0; i < json.feed.entry.length; i++) {
+        entry = json.feed.entry[i];
+        $('#currentSeller').append(
+            '<tr class="active">' +
+            '<td>'+ entry.gsx$time.$t +'</td>'+
+            '<td>'+ entry.gsx$name.$t +'</td>'+         
+            '<td style="width:100px;">'+ entry.gsx$amnt.$t +'</td>'+
+            '<td >'+ entry.gsx$reason.$t +'</td>'+
+            '</tr>'
+        );
+    }
+}
