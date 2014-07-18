@@ -41,18 +41,24 @@
           </button>
           <a class="navbar-brand" href="index.html"><img src = "ViaStock_Logo_tiny.png"></img></a>
         </div>
-
+        <style>
+        li span{
+          color: #FFF;
+        }
+        </style>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
+
             <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li><a href="transaction_history.html"><i class="fa fa-th-list"></i> Transaction History</a></li>
             <li><a href="perform.html"><i class="fa fa-shopping-cart"></i> Perform a Transaction</a></li>
-            </li>
+            <!--<li style = "padding-left: 15px;"><span><i class = "fa fa-briefcase"></i> Your Current Shares: </span></li>
+            <li style = "padding-left: 15px;"><span><i class = "fa fa-usd"></i> Your Current ViaBucks: </span></li>-->
           </ul>
 
           <ul class="nav navbar-nav navbar-right navbar-user">
-            
+           
             <li class="dropdown alerts-dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -87,20 +93,41 @@
             <h1><b>Dashboard </b><small><b>Market Overview</b></small></h1>
           </div>
         </div><!-- /.row -->
-
 <!-- /.row -->
         <div class = "row">
-          <div class="col-lg-10">
+          <div class="col-lg-6">
             <div class="panel panel-primary">
               <div class="panel-heading">
                 <h3 align="center" class="panel-title"><b> Will more customers choose self-install over technician install in the month of July? </b></h3>
               </div>
               <div class="panel-body">
                 <p align = "center"><b>Current Price: </b></p>
-                <div id="currentPrice"></div>
+                <div id="currentPrice" align = "center"></div>
               </div>
             </div>
-          </div>   
+          </div>
+          <div class="col-lg-2">
+            <div class= "panel panel-primary">
+              <div class="panel-heading">
+                <h3 align="center" class="panel-title"><b> Your Current Shares (Shares Held)</b></h3>
+              </div>
+              <div class="panel-body">
+                <p align = "center"><b> 2 </b></p>
+                <!--<div id="currentPrice" align = "center"></div>-->
+              </div>
+            </div>
+          </div>  
+          <div class="col-lg-2">
+            <div class= "panel panel-primary">
+              <div class="panel-heading">
+                <h3 align="center" class="panel-title"><b> Your ViaBucks</b></h3>
+              </div>
+              <div class="panel-body">
+                <p align = "center"><b> 10 </b></p>
+                <!--<div id="currentPrice" align = "center"></div>-->
+              </div>
+            </div>
+          </div> 
         </div>
         <div class="row">
           <div class="col-lg-10">
